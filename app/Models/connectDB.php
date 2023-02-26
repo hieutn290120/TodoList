@@ -14,7 +14,7 @@ class DBConnect
         try {
             $pdo = new PDO("$host:dbname=$dbname;host=$host", $username, $password, [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION]);
         } catch (PDOException $e) {
-            die("Kết nối đến database thất bại: " . $e->getMessage());
+            die("Connection failed: " . $e->getMessage());
         }
 
         $this->conn = $pdo;

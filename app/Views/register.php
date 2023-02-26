@@ -35,7 +35,6 @@
 		var startDate = document.getElementById("starting_date").value;
 		var endDate = document.getElementById("ending_date").value;
 
-		// kiểm tra điều kiện
 		if (startDate >= endDate) {
 			alert("The start date must be less than the end date!");
 			return false;
